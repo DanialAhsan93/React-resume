@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-primary);
+    padding: 64px 0px;
+}
+
+.container-login {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--bs-second);
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.03),
+        0 4px 10px rgba(0, 0, 0, 0.15),
+        4px 0 10px rgba(0, 0, 0, 0.15),
+        0 -4px 10px rgba(0, 0, 0, 0.15),
+        -4px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.bgimg {
+    background-image: url(../images/bgcontact1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgimg::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--bs-primary);
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.box {
+    width: 100%;
+    padding: 15px;
+}
+
+.card-detail {
+    color: white;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.form-head {
+    font-size: 10px;
+    color: white;
+}
+
+.form-log {
+    color: var(--bs-primary);
+    font-size: 32px;
+}
+
+.para-log {
+    font-size: 15px;
+    color: var(--bs-primary);
+}
+.custom-input{
+    position: relative !important;
+}
+.form-errorlog{
+    position: absolute !important;
+}
+ 
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .form-log {
+        font-size: 22px;
+    }
+    .icon-hover {
+        width: 73% !important;
+        padding: 14px 0px;
+    
+      }
+    .card-detail h1{
+        font-size: 23px;
+    }
+    .card-detail p{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 475px) and (max-width: 767px) {
+    .form-log {
+        font-size: 22px;
+    }
+    .icon-hover {
+        width: 73% !important;
+        padding: 14px 0px;
+    
+      }
+    .card-detail h1{
+        font-size: 23px;
+    }
+    .card-detail p{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 478px) {
+    .form-log {
+        font-size: 22px;
+    }
+    .card-detail h1{
+        font-size: 23px;
+    }
+    .card-detail p{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .form-log {
+        font-size: 22px;
+    }
+    .icon-hover {
+        width: 73% !important;
+        padding: 14px 0px;
+    
+      }
+    .card-detail h1{
+        font-size: 23px;
+    }
+    .card-detail p{
+        font-size: 14px;
+    }
+}

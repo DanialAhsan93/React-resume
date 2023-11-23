@@ -1,0 +1,65 @@
+.edit-sect {
+    position: relative;
+}
+
+.mous-eff {
+    position: fixed;
+    top: 60%;
+    right: 14%;
+    z-index: 3;
+}
+
+.row-edit-sect {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.updated-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.prf-edit {
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 10px 0px 10px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.role-edit {
+    font-size: 15px;
+}
+
+.contact-edit {
+    font-weight: 700;
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 0px 0px 0px 10px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.phn-edit {
+    font-size: 15px;
+}
+
+.addr-edit {
+    margin-top: 3px;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {}
+
+@media only screen and (min-width: 475px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 375px) and (max-width: 478px) {}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    
+}

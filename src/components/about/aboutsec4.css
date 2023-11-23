@@ -1,0 +1,19 @@
+.btn-3 {
+    FONT-SIZE: 15px;
+    font-weight: bold;
+    LINE-HEIGHT: 22.5px;
+    text-align: center;
+    padding: 15px 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.btn-3:hover {
+    background-color: white;
+    color: var(--bs-primary);
+}
+.contain-abt4{
+    border-radius: 130px;
+}

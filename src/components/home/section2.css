@@ -1,0 +1,30 @@
+.sec2-contain{
+    position: relative;
+}
+.img2{
+    width: 45%;
+    height: 85vh;
+    position: absolute;
+    top: 0;
+    left: 26%;
+    box-shadow: 1px 0 12px 1px #999, -6px 0 4px -8px #999
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .img2{
+        width: 35%;
+        height: 100vh;
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        box-shadow: 1px 0 12px 1px #999, -6px 0 4px -8px #999
+    }
+}
+@media only screen and (min-width: 475px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 375px) and (max-width: 478px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+}

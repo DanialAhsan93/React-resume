@@ -1,0 +1,22 @@
+.skills-edit{
+    font-weight: 700;
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 0px 0px 0px 10px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.skill-clr{
+    width: 50%;
+    height: 18px;
+    background: var(--bs-seventh);
+    border-top-left-radius: 8px ;
+    border-bottom-left-radius:8px ;
+}
+.skill-transparent{
+    width: 27%;
+    height: 18px;
+    background: var(--bs-tenth);
+    border-top-right-radius:8px ;
+    border-bottom-right-radius:8px ;
+}

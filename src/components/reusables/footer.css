@@ -1,0 +1,6 @@
+.footer .col-md-3 a{
+    color: white;
+}
+.footer .col-md-3 a:hover{
+    color: var(--bs-third);
+}

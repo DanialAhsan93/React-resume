@@ -1,0 +1,450 @@
+.animation-container {
+    width: 100%;
+    height: 504px;
+    position: relative;
+    overflow: hidden;
+}
+
+.state-1 {
+    animation-name: fake-animation-state-1;
+    animation-duration: 7s;
+}
+
+.state-2 {
+    animation-name: fake-animation-state-2;
+    animation-duration: 7s;
+}
+
+.box-doted-bg,
+.yellow-box,
+.blue-box {
+    display: flex;
+}
+
+.box-doted-bg {
+    position: absolute;
+    width: 328px;
+    height: 327px;
+    z-index: 1;
+    background: linear-gradient(90deg, #092347 20px, transparent 1%) center, linear-gradient(#092347 20px, transparent 1%) center, #fff;
+    background-size: 22px 21px;
+    transform: translate(66px, 80px);
+    display: flex;
+}
+
+.inner-box {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 16px;
+    width: 365px;
+    height: 487px;
+    overflow: hidden;
+}
+
+
+
+.state-2 .yellow-box {
+    animation-name: yellow-box-turn-rectangle-to-circle-state-2;
+    animation-duration: 1s;
+}
+
+.state-1 .yellow-box {
+    animation-name: yellow-box-turn-circle-to-rectangle-state-1;
+    animation-duration: 1s;
+}
+
+.state-1 .yellow-box,
+.state-1 .blue-box,
+.state-1 .girl-box,
+.state-1 .girl-box-resume-img {
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.12, 1.56, .72, .9);
+}
+
+.state-2 .yellow-box,
+.state-2 .blue-box,
+.state-2 .girl-box,
+.state-2 .girl-box-resume-img {
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.12, 1.56, .72, .9);
+}
+
+.state-2 .yellow-box {
+    width: 340px;
+    height: 441px;
+    transform: translate(15px, 15px);
+    border-radius: 0;
+}
+
+.yellow-box {
+    position: absolute;
+    z-index: 3;
+    background: rgb(255, 136, 115) 0% 0% no-repeat padding-box;
+    width: 262px;
+    height: 323px;
+    transform: translate(0, 148px);
+    border-radius: 70px 0 0 0;
+    display: flex;
+}
+
+.state-1 .blue-box {
+    animation-name: blue-box-turn-small-to-hide-state-1;
+    animation-duration: 1s;
+}
+
+.state-2 .blue-box {
+    animation-name: blue-box-turn-hide-to-small-state-2;
+    animation-duration: 1s;
+}
+
+.blue-box {
+    position: absolute;
+    z-index: 2;
+    background: #6BB6C2 0% 0% no-repeat padding-box;
+    border-radius: 70px 0;
+    width: 267px;
+    height: 471px;
+    transform: translate(98px, 0);
+    display: flex;
+}
+
+.state-1 .girl-box-resume-img {
+    animation-name: resume-image-show-state-1;
+    animation-duration: 0.6s;
+}
+
+.state-1 .girl-box-resume-img {
+    animation-delay: 6s;
+}
+
+.state-1 .girl-box {
+    animation-name: girl-move-left-state-1;
+    animation-duration: 0.6s;
+}
+
+.state-1 .girl-box-resume-img {
+    animation-delay: 6s;
+}
+
+
+
+
+
+.state-2 .girl-box {
+    animation-name: girl-move-right-state-2;
+    animation-duration: 0.6s;
+}
+
+.state-2 .girl-box {
+    animation-delay: 6s;
+}
+
+
+
+.girl-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -5px;
+}
+
+.girl-box-resume-img {
+    position: absolute;
+    z-index: 5;
+    transform: translate(0, 500px);
+    width: 340px;
+    height: 441px;
+    background: #fff;
+}
+
+.state-2 .girl-box {
+    transform: translateX(400px);
+}
+
+.state-2 .girl-box-resume-img {
+    animation-name: resume-image-hide-state-2;
+    animation-duration: 0.6s;
+}
+
+.state-2 .girl-box-resume-img {
+    animation-delay: 4.7s;
+}
+
+.state-2 .girl-box-resume-img {
+    transform: translate(0, 0);
+}
+
+.girl-box {
+    width: 365px;
+    height: 471px;
+    position: absolute;
+    z-index: 4;
+    border-radius: 0 0 70px 0;
+    transform: translate(0, 0);
+    overflow: hidden;
+}
+
+
+
+@keyframes fake-animation-state-1 {
+    0% {}
+
+}
+
+@keyframes fake-animation-state-2 {
+    0% {}
+}
+
+@keyframes yellow-box-turn-rectangle-to-circle-state-2 {
+    0% {
+        width: 340px;
+        height: 441px;
+        transform: translate(15px, 15px);
+        border-radius: 0;
+    }
+
+    40% {
+        width: 182px;
+        height: 184px;
+        transform: translate(0, 100px);
+        border-radius: 101px;
+    }
+
+    60% {
+        width: 182px;
+        height: 184px;
+        transform: translate(0, 100px);
+        border-radius: 101px;
+    }
+
+    100% {
+        width: 262px;
+        height: 323px;
+        transform: translate(0, 148px);
+        border-radius: 70px 0 0 0;
+    }
+}
+
+
+@keyframes yellow-box-turn-circle-to-rectangle-state-1 {
+    0% {}
+
+    40% {
+        width: 182px;
+        height: 184px;
+        transform: translate(0, 100px);
+        border-radius: 101px;
+    }
+
+    60% {
+        width: 182px;
+        height: 184px;
+        transform: translate(0, 100px);
+        border-radius: 101px;
+    }
+
+    100% {
+        width: 340px;
+        height: 441px;
+        transform: translate(15px, 15px);
+        border-radius: 0;
+    }
+}
+
+@keyframes blue-box-turn-small-to-hide-state-1 {
+    0% {}
+
+    40% {
+        width: 193px;
+        height: 279px;
+        transform: translate(98px, 194px);
+    }
+
+    60% {
+        width: 193px;
+        height: 279px;
+        transform: translate(98px, 194px);
+    }
+
+    100% {
+        width: 193px;
+        height: 0;
+        transform: translate(98px, 460px);
+    }
+}
+
+@keyframes blue-box-turn-hide-to-small-state-2 {
+    0% {
+        width: 193px;
+        height: 0;
+        transform: translate(98px, 460px);
+    }
+
+    40% {
+        width: 193px;
+        height: 279px;
+        transform: translate(98px, 194px);
+    }
+
+    60% {
+        width: 193px;
+        height: 279px;
+        transform: translate(98px, 194px);
+    }
+
+    100% {
+        width: 267px;
+        height: 471px;
+        transform: translate(98px, 0);
+    }
+}
+
+@keyframes girl-move-left-state-1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(400px);
+    }
+}
+
+
+@keyframes girl-move-right-state-2 {
+    0% {}
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes resume-image-show-state-1 {
+    0% {}
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes resume-image-hide-state-2 {
+    0% {}
+
+    100% {
+        transform: translate(0, 500px);
+    }
+}
+
+@media only screen and (min-width: 981px)and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {}
+
+@media only screen and (min-width: 475px) and (max-width: 778px) {
+    .box-doted-bg {
+        width: 202px;
+        height: 302px;
+    }
+
+    .inner-box {
+        width: 259px;
+        height: 382px;
+    }
+
+    .yellow-box {
+        width: 202px;
+        height: 220px;
+    }
+
+    .state-2 .yellow-box {
+        width: 202px;
+        height: 221px;
+    }
+    .girl-box img {
+        width: 75%;
+        height: 100%;
+
+    }
+    .girl-box-resume-img {
+        width: 292px;
+        height: 387px;
+    }
+    .animation-container {
+        width: 100%;
+        height: 391px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 478px) {
+    .box-doted-bg {
+        width: 280px;
+        height: 302px;
+    }
+
+    .inner-box {
+        width: 310px;
+        height: 382px;
+    }
+
+    .yellow-box {
+        width: 202px;
+        height: 220px;
+    }
+
+    .state-2 .yellow-box {
+        width: 202px;
+        height: 250px;
+    }
+    .girl-box img {
+        width: 85%;
+        height: 100%;
+
+    }
+    .girl-box-resume-img {
+        width: 292px;
+        height: 387px;
+    }
+    .animation-container {
+        width: 100%;
+        height: 391px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .box-doted-bg {
+        width: 202px;
+        height: 302px;
+    }
+
+    .inner-box {
+        width: 259px;
+        height: 382px;
+    }
+
+    .yellow-box {
+        width: 202px;
+        height: 220px;
+    }
+
+    .state-2 .yellow-box {
+        width: 202px;
+        height: 221px;
+    }
+    .girl-box img {
+        width: 75%;
+        height: 100%;
+
+    }
+    .girl-box-resume-img {
+        width: 292px;
+        height: 387px;
+    }
+    .animation-container {
+        width: 100%;
+        height: 391px;
+    }
+
+}

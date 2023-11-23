@@ -1,0 +1,8 @@
+.input-edit{
+        width: 100%;
+        border: none;
+        background-color: whitesmoke;
+}
+.input-edit:focus{
+    outline: none;
+}

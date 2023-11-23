@@ -1,0 +1,25 @@
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+  outline: none;
+}
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button[aria-expanded="true"]::after {
+  filter: brightness(0) invert(1) hue-rotate(180deg);
+}
+.collapsing {
+  transition: height .5s ease;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {}
+
+@media only screen and (min-width: 479px) and (max-width: 768px) {}
+
+@media only screen and (min-width: 376px) and (max-width: 478px) {}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    
+}

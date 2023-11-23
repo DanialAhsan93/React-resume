@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Inter', sans-serif;
+}
+:root{
+
+  --bs-primary: #092347;
+  --bs-second : #F3F6F9;
+  --bs-third :  #2c858d;
+  --bs-fourth:   #FEF0F0;
+  --bs-fifth : #FB8470;
+  --bs-sixth : #CCEFFF;
+  --bs-seventh : #00BCFF;
+  --bs-eight : #FDE8F5;
+  --bs-nineth : #F790CB;
+  --bs-tenth:#D1D5DA;
+  --bs-eleven:red;
+}
+
+html {
+  scroll-behavior: smooth;
+}

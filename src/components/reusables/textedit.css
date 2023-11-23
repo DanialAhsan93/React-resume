@@ -1,0 +1,11 @@
+.text-edit{
+    background: whitesmoke;
+    border: none;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.text-edit:focus{
+    outline: none;
+}
